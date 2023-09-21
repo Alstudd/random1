@@ -3,7 +3,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import { FaSmile } from "react-icons/fa"
 
 function ContactForm() {
-    const [state, handleSubmit] = useForm(import.meta.env.VITE_CONTACT_KEY);
+    const [state, handleSubmit] = useForm("xbjvzapr");
     if (state.succeeded) {
         return <div className="info-box flex flex-col justify-center items-center">
             <FaSmile className='text-blue-500 text-4xl' />
