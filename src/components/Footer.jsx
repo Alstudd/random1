@@ -5,13 +5,13 @@ const Footer = () => {
     return (
         <div className="w-full bg-[#EEF4FF] py-8 md:px-2 px-10">
             <div className="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8">
-                <img className="col-span-2 w-[20rem]" src="/medichain.png" alt="" />
+                <img className="col-span-2 w-[20rem]" src="/wewomenlogo.png" alt="" />
                 <div className="mt-6">
-                    <h6 className="font-bold uppercase py-2">Facilities</h6>
+                    <h6 className="font-bold uppercase py-2">Features</h6>
                     <ol>
-                        <li className="py-2">Storage</li>
-                        <li className="py-2">Accessibility</li>
-                        <li className="py-2">Privacy</li>
+                        <li className="py-2">Security</li>
+                        <li className="py-2">Empowerment</li>
+                        <li className="py-2">Medical Support</li>
                     </ol>
                 </div>
                 <div className="mt-6">

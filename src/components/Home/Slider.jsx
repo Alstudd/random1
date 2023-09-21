@@ -15,12 +15,12 @@ export default function Slider() {
                 sliderDetails.map((card, i) => (
                     <SwiperSlide key={i}>
                         <div className='w-[20rem] opp-card hover:scale-[1.025] hover:cursor-pointer flex flex-col items-center gap-[0.6rem] px-[1rem] pb-[1rem] pt-[1.3rem] m-auto'>
-                            <a href={card.link} target='_blank'><img className='w-[20rem] h-[15rem] rounded-[10%] mb-1' src={card.imgUrl} alt="cardImg" /></a>
-                            <span className='font-bold w-full text-center text-[1.2rem]'>
-                                <span>{card.date}</span>
-                            </span>
+                            <img className='w-[20rem] h-[15rem] rounded-[10%] mb-1' src={card.imgUrl} alt="cardImg" />
                             <p className='text-[1.5rem] w-full text-center text-[#012970] font-bold'>{card.title}</p>
-                            <span className='text-[0.9rem] w-full text-center font-semibold'>{card.desc}</span>
+                            {/* <span className='text-[0.9rem] w-full text-center font-semibold'>{card.desc}</span> */}
+                            <span className='font-bold w-full text-center text-[1.1rem]'>
+                                <span>{card.desc}</span>
+                            </span>
                         </div>
                     </SwiperSlide>
                 ))   

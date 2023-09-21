@@ -10,7 +10,6 @@ import {
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { MdOutlineArrowDropDown } from 'react-icons/md';
 import serviceDetails from '../../data/serviceDetails';
-import logo from "../../assets/logo.jpeg";
 
 export default function OurServices() {
     return (
@@ -21,7 +20,7 @@ export default function OurServices() {
                     <p className='mt-[10px] mx-0 mb-0 p-0 sm:text-[38px] sm:leading-[42px] font-bold text-[#012970] text-[28px] leading-[32px]'>Our Services</p>
                 </header>
                 <div className='w-[20rem] h-[20rem] xs:w-[25rem] xs:h-[25rem] sm:w-[30rem] sm:h-[28rem] overflow-hidden rounded-t-[15rem]'>
-                    <img className='w-full h-full' src={logo} alt="" />
+                    <img className='w-full h-full object-cover' src="/Home/pic2.png" alt="" />
                 </div>
                 <div className='flex gap-[0.5rem] flex-col items-start'>
                     <header className='lg:block hidden'>

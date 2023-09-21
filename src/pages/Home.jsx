@@ -5,27 +5,20 @@ import ManageProducts from "../components/Home/ManageProducts";
 import StartYourJourney from "../components/Home/StartYourJourney";
 import HeroSection from "../components/Home/HeroSection";
 import Carousel from "../components/Home/Carousel";
-import Counts from "../components/Home/Counts";
-import Slider from '../components/Home/Slider'
+import Slider from "../components/Home/Slider";
 import OurServices from "../components/Home/OurServices";
-import CompC from "../assets/Home/CompC.jpg";
-import CompCGirls from "../assets/Home/CompCGirls.jpg";
-import CompCBoys from "../assets/Home/CompCBoys.png";
-import groupPic from "../assets/Home/groupPic.jpg";
-import purvaKhushi from "../assets/Home/purvaKhushi.jpg";
-import APIday from "../assets/Home/APIday.jpeg";
-import MulticonPythonFirst from "../assets/Home/MulticonPythonFirst.jpeg";
-import { FaSmile, FaBook, FaBookReader, FaCode } from "react-icons/fa";
+import carouselPic1 from "../assets/Home/carouselPic1.png";
+import carouselPic2 from "../assets/Home/carouselPic2.png";
 import "../css/contact.css";
 
 export default function Home() {
   const slides = [
-    { image: CompC },
-    { image: CompCGirls },
-    { image: CompCBoys },
-    { image: groupPic },
-    { image: purvaKhushi },
-    { image: APIday },
+    { image: carouselPic2 },
+    { image: "/Home/pic2.png" },
+    { image: "/Home/pic3.png" },
+    { image: "/Home/pic5.png" },
+    { image: carouselPic1 },
+    { image: "/Home/pic6.png" },
   ];
   const containerStyles = {
     // width: '500px',
@@ -34,28 +27,6 @@ export default function Home() {
     marginRight: "auto",
     marginBottom: "100px",
   };
-  const countCards = [
-    {
-      image: <FaBook className="m-auto w-10 h-10 text-blue-500" />,
-      number: 6,
-      title: "Sem-1 10 pointers",
-    },
-    {
-      image: <FaCode className="m-auto w-10 h-10 text-blue-500" />,
-      number: 7,
-      title: "Open Source Contributors",
-    },
-    {
-      image: <FaBookReader className="m-auto w-10 h-10 text-blue-500" />,
-      number: 2,
-      title: "Sem-2 10 pointers",
-    },
-    {
-      image: <FaSmile className="m-auto w-10 h-10 text-blue-500" />,
-      number: 63,
-      title: "COMP-C Students",
-    },
-  ];
   return (
     <div>
       <HeroSection />
@@ -66,36 +37,26 @@ export default function Home() {
         <Carousel slides={slides} />
       </div>
 
-      <div className="pt-10 mb-10">
+      <div className="pt-10">
         <Hero />
         <WhatWeDo />
-        <div className="xl:mt-0 md:mt-[36rem] mt-0">
+        <div className="">
           <ManageProducts />
         </div>
       </div>
       <section id="contact" className="mb-16 contact flex justify-center">
         <div className="container">
           <header className="section-header pb-[40px]">
-            <h2>Opportunities</h2>
-            <p>Upcoming Events</p>
+            <h2>Features</h2>
+            <p>Our Features</p>
           </header>
           <Slider />
         </div>
       </section>
       <OurServices />
-      <div className="justify-center flex flex-wrap gap-10 pb-20 mt-10">
-        {countCards.map((card, i) => {
-          return (
-            <Counts
-              key={i}
-              image={card.image}
-              number={card.number}
-              title={card.title}
-            />
-          );
-        })}
+      <div className="mt-10">
+        <StartYourJourney />
       </div>
-      <StartYourJourney />
     </div>
   );
 }

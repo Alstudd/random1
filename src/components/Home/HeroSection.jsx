@@ -1,9 +1,6 @@
 import React from 'react'
 import { FaAddressBook } from 'react-icons/fa';
-import logo from "../../assets/logo.jpeg";
 import Arrow from "../../assets/Home/Arrow.svg";
-import CompC from "../../assets/Home/CompC.jpg";
-import CompCBoys from "../../assets/Home/CompCBoys.png";
 import '../../css/animations.css';
 import { motion } from 'framer-motion';
 
@@ -35,7 +32,7 @@ export default function HeroSection() {
               delay: 0.5
             }}
             className="font-bold text-4xl leading-[3rem] tracking-[-0.06rem] md:leading-[3.75rem] 2xl:leading-[4.5rem] 2xl:text-6xl md:text-5xl">
-            Discover the Achievements of SE Comp-C Students
+            Welcome to WeWomen: Empowering Women Worldwide
           </motion.h1>
           <motion.p
             initial={{ y: "2rem", opacity: 0 }}
@@ -45,7 +42,7 @@ export default function HeroSection() {
               type: "spring",
               delay: 0.5
             }}
-            className="text-slate-600 font-normal"><i>WeWomen</i> is more than just an app; it's a comprehensive solution created to empower women by tackling the problems they encounter every day</motion.p>
+            className="text-slate-600 font-normal"><i>WeWomen</i> is more than just an app, it's a comprehensive solution created to empower women by tackling the problems they encounter every day</motion.p>
         </div>
         <motion.div 
         initial={{ x: "-7rem", opacity: 0 }}
@@ -70,7 +67,7 @@ export default function HeroSection() {
         }}
         className='w-[20rem] h-[20rem] m-auto md:ml-0 md:mb-0 md:mt-0 md:mr-40 sm:w-[25rem] sm:h-[25rem] lg:w-[20rem] lg:h-[20rem] xl:w-[25rem] xl:h-[25rem] overflow-hidden rounded-[5rem]'>
         <div className='zoom-in'>
-          <figure><img className='w-full h-full' src={logo} alt="" /></figure>
+          <figure><img className='w-full h-full' src="/Home/mainPic.png" alt="" /></figure>
         </div>
       </motion.div>
       {/* <img class="mr-10 lg:h-[30rem] lg:w-[36rem] 2xl:h-[30rem] 2xl:w-[36rem] md:h-[30rem] md:w-[28rem]" src={CompC} alt="Main-img" /> */}

@@ -14,11 +14,11 @@ export default function Hero() {
       <div className="flex flex-col items-center gap-7">
         <div className="md:mt-24 mt-14 flex flex-col items-center gap-4">
           <h1 className="z-10 text-center lg:text-6xl md:text-5xl text-4xl font-extrabold lg:w-[56rem] md:w-[40rem] w-[22rem] md:leading-normal leading-tight">
-            Your Gateway to Secure Data Storage{" "}
+            Your Gateway to Women Safety{" "}
             <span className="gradText1 leading-snug">Begins Here</span>
           </h1>
           <p className="text-center md:text-xl text-base font-medium text-[#616161] lg:w-[46rem] md:w-[35rem] w-[15rem]">
-            Join Our Blockchain Backed Platform, Empowering Healthcare through Secure Blockchain Technology. Use our Platform For secure patient data storage and exchange using Blockchain
+          Welcome to WeWomen, where empowerment, safety, and community converge to create a brighter, more secure future for women worldwide.
           </p>
         </div>
         <div className="z-10 flex h-11 justify-between rounded-2xl bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
@@ -37,11 +37,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="relative mt-2 flex flex-col items-center">
-        {Array.from({length: 4}, (_, index) => {
-          return <img key={index} className="xl:block hidden pt-1" src="/Home/Line2.svg" alt="img" />
-        })}
-        <img className="xl:block hidden absolute top-8 right-[47.6%] -rotate-90" src="/Home/arrowLeft.svg" alt="arrowLeft" />
-        <img className="absolute left-[1.9rem] xl:top-20 top-10" src="/Home/Ellipse2.svg" alt="" />
+        <img className="absolute left-[1.9rem] xl:top-10 top-10" src="/Home/Ellipse2.svg" alt="" />
       </div>
     </div>
   );

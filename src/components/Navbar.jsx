@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <div className="relative flex justify-between items-center w-full">
       <a className="z-40" href="/">
-        <img className="pl-5 w-40" src="/medichain.png" alt="logo" />
+        <img className="pl-5 w-40 mt-2" src="/wewomenlogo.png" alt="logo" />
       </a>
       <div className="hidden lg:flex pl-40 gap-[4.75rem] text-[#6F6F6F] text-base font-normal items-center">
         <a href="/">Home</a>
