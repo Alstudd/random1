@@ -32,7 +32,7 @@ export default function HeroSection() {
               delay: 0.5
             }}
             className="font-bold text-4xl leading-[3rem] tracking-[-0.06rem] md:leading-[3.75rem] 2xl:leading-[4.5rem] 2xl:text-6xl md:text-5xl">
-            Welcome to WeWomen: Empowering Women Worldwide
+            WeWomen: Empowering Women Worldwide
           </motion.h1>
           <motion.p
             initial={{ y: "2rem", opacity: 0 }}
