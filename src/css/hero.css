@@ -1,0 +1,21 @@
+.gradText1 {
+  background: linear-gradient(90deg, #0147ff 40.81%, #ae0eff 82.2%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradText2 {
+  background: linear-gradient(180deg, #8f00ff 0%, #f00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.myShadow {
+  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.45);
+}
+
+.buttonBoxShadow {
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
